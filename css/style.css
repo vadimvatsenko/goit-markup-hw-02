@@ -1,0 +1,68 @@
+/* color: #212121; - основной текст текста */
+/* color: #757575; - вторичный цвет текста */
+/* color: rgba(255, 255, 255, 0.6); - текст цвета emal tel в футере */
+/* color: #2196F3; - цвет hover и кнопок */
+/* color: #000000; - цвет лого в header */
+/* color: #000000; - цвет текста в баннере, в кнопке, адрес футера, кнопок hover */
+/* background-color: #E5E5E5 - первичный цвет фона */
+:root {
+    --first-text-color: #212121;
+    --second-text-color: #757575;
+    --first-background-color: #E5E5E5;
+    --hover-button-color: #2196F3;
+}
+body {
+    background-color: var(--first-background-color);
+    color: var(--first-text-color);
+}
+ul {
+    list-style: none;
+}
+.header {
+    background-color: #FFFFFF
+}
+.logo {
+    color: #000000
+}
+.logo-header {
+    color: var(--hover-button-color);
+}
+.header-list>.link {
+    color: var(--first-text-color);
+    cursor: pointer;
+}
+.header-list>.link:hover, 
+.header-list>.link:focus  {
+    color: var(--hover-button-color)
+}
+.banner {
+    background-color: #2F303A;
+}
+.banner-title {
+    color: #FFFFFF;
+}
+.banner-button {
+    background-color: var(--hover-button-color);
+    color:#FFFFFF;
+
+}
+
+
+
+
+/* Портфолио */
+.portfolio-header {
+    font-size: 0;
+}
+.portfolio-buttons>.button {
+    background-color: #F5F4FA;
+    color: var(--first-text-color);
+   
+   
+    
+}
+.portfolio-buttons>.button:hover,
+.portfolio-buttons>.button:focus {
+    background-color: var(--hover-button-color);
+    color:#FFFFFF
+}
