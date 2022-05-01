@@ -81,7 +81,9 @@ body {
 .logo-footer {
     color: #FFFFFF;
 }
-
+.peculiarities>.title {
+    font-size: 0;
+}
 
 /* Портфолио */
 .portfolio-header {
