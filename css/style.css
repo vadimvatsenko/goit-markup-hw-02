@@ -8,49 +8,79 @@
 :root {
     --first-text-color: #212121;
     --second-text-color: #757575;
-    --first-background-color: #E5E5E5;
     --hover-button-color: #2196F3;
 }
 body {
-    background-color: var(--first-background-color);
-    color: var(--first-text-color);
-}
-ul {
-    list-style: none;
-}
-.header {
-    background-color: #FFFFFF
+    background-color: #FFFFFF;
+    color: #212121;
+
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
 }
 .logo {
-    color: #000000
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
 }
 .logo-header {
-    color: var(--hover-button-color);
+    color: #2196F3;
 }
 .header-list>.link {
-    color: var(--first-text-color);
-    cursor: pointer;
-}
-.link.current {
-    color: var(--hover-button-color)
+    color: #212121;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 }
 .header-list>.link:hover, 
-.header-list>.link:focus  {
-    color: var(--hover-button-color)
+.header-list>.link:focus,
+.header-contact>.email:hover,
+.header-contact>.email:focus,
+.header-contact>.phone:hover,
+.header-contact>.phone:focus,
+.link.current {
+    color: #2196F3;
+}
+.header-contact>.email,
+.header-contact>.phone {
+    color: #757575;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
 }
 .banner {
     background-color: #2F303A;
 }
 .banner-title {
     color: #FFFFFF;
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
 .banner-button {
-    background-color: var(--hover-button-color);
+    background-color: #2196F3;
     color:#FFFFFF;
 
 }
+.team {
+    background: #F5F4FA;
+}
 
-
+.footer {
+    background-color: #2F303A
+}
+.logo-footer {
+    color: #FFFFFF;
+}
 
 
 /* Портфолио */
@@ -59,13 +89,13 @@ ul {
 }
 .portfolio-buttons>.button {
     background-color: #F5F4FA;
-    color: var(--first-text-color);
+    color: #212121;
    
    
     
 }
 .portfolio-buttons>.button:hover,
 .portfolio-buttons>.button:focus {
-    background-color: var(--hover-button-color);
+    background-color: #2196F3;
     color:#FFFFFF
 }
