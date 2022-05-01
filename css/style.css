@@ -31,6 +31,9 @@ ul {
     color: var(--first-text-color);
     cursor: pointer;
 }
+.link.current {
+    color: var(--hover-button-color)
+}
 .header-list>.link:hover, 
 .header-list>.link:focus  {
     color: var(--hover-button-color)
