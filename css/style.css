@@ -89,6 +89,8 @@ body {
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
+
+    cursor: pointer;
 }
 /* Заголовок особенности скрыт */
 .peculiarities-title {
@@ -150,6 +152,8 @@ body {
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
+
+    cursor: pointer;
 }
 /* portfolio  */
 .portfolio-title {
@@ -158,10 +162,7 @@ body {
 .filter-button {
     color: #212121;
     background-color: #F5F4FA;
-
-    width: 145px;
-    height: 38px;
-    
+   
     font-weight: 700;
     font-size: 16px;
     line-height: 1.62;
