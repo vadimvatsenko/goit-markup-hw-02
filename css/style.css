@@ -31,11 +31,12 @@ body {
 /* шапка */
 .header-list>.link {
     color: var(--main-text-color);
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14px;
     letter-spacing: 0.02em;
-    text-decoration: none;
+    text-decoration: none
 }
 .header-list>.link:hover,
 .header-list>.link:focus {
@@ -97,32 +98,37 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    text-transform: uppercase
 }
 .peculiarities-list>.descr {
     color: var(--second-text-color);
     
     font-size: 14px;
-    line-height: 1.71;    
+    line-height: 1.71;  
+    letter-spacing: 0.03em;
 }
 .doing-title,
 .team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;   
+    text-align: center;
+    letter-spacing: 0.03em
 }
 .card-title {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    letter-spacing: 0.03em
 }
 
 .card-subtitle{
     color: var(--second-text-color);
     
     font-size: 16px;
-    line-height: 1.19px;    
+    line-height: 1.19px;
+    letter-spacing: 0.03em
 }
 .footer {
     background-color: #2F303A
@@ -135,6 +141,7 @@ body {
 
     font-size: 14px;
     line-height: 1.71;
+    letter-spacing: 0.03em
 }
 .footer-email,
 .footer-phone {
@@ -143,8 +150,9 @@ body {
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
+    letter-spacing: 0.03em;
 
-    cursor: pointer;
+    cursor: pointer
 }
 .footer-email:hover,
 .footer-email:focus,
@@ -163,8 +171,9 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.62;
+    letter-spacing: 0.03em;
     
-    cursor: pointer;
+    cursor: pointer
 }
 .filter-button.active,
 .filter-button:hover,
@@ -183,5 +192,6 @@ body {
 
     font-size: 16px;
     line-height: 1.88;
+    letter-spacing: 0.03em
 }
 
