@@ -1,10 +1,4 @@
-/* color: #212121; - основной текст текста */
-/* color: #757575; - вторичный цвет текста */
-/* color: rgba(255, 255, 255, 0.6); - текст цвета emal tel в футере */
-/* color: #2196F3; - цвет hover и кнопок */
-/* color: #000000; - цвет лого в header */
-/* color: #000000; - цвет текста в баннере, в кнопке, адрес футера, кнопок hover */
-/* background-color: #E5E5E5 - первичный цвет фона */
+
 :root {
     --first-text-color: #212121;
     --second-text-color: #757575;
@@ -12,13 +6,18 @@
 }
 body {
     background-color: #FFFFFF;
-    color: #212121;
+    /* color: #212121; */
 
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.03em;
 }
+/* Убраны точки во всех списках дополнительным классом для ul */
+.lists-none {
+    list-style-type: none;
+}
 .logo {
-    color: #000000;
+    color: #2196F3;
+
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -26,78 +25,167 @@ body {
     text-decoration: none;
 }
 .logo-header {
-    color: #2196F3;
+    color: #000000;
 }
+.logo-footer {
+    color: #FFFFFF;
+}
+/* шапка */
 .header-list>.link {
     color: #212121;
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+.header-list>.link:hover,
+.header-list>.link:focus {
+    color: #2196F3;
+}
+/* Подсветка ссылки активной страницы */
+.link.current {
+    color: #2196F3;
+}
+
+.header-contact>.email,
+.header-contact>.phone {
+    color: #757575;
+    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
     text-decoration: none;
 }
-.header-list>.link:hover, 
-.header-list>.link:focus,
 .header-contact>.email:hover,
 .header-contact>.email:focus,
 .header-contact>.phone:hover,
-.header-contact>.phone:focus,
-.link.current {
+.header-contact>.phone:focus {
     color: #2196F3;
 }
-.header-contact>.email,
-.header-contact>.phone {
-    color: #757575;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    text-decoration: none;
-}
+/* баннер */
 .banner {
-    background-color: #2F303A;
+    background-color: #2F303A
 }
 .banner-title {
     color: #FFFFFF;
-
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
-.banner-button {
+.main-button {
+    color: #FFFFFF;
     background-color: #2196F3;
-    color:#FFFFFF;
-
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
 }
-.team {
-    background: #F5F4FA;
+/* Заголовок особенности скрыт */
+.peculiarities-title {
+    font-size: 0;
+}
+.peculiarities-list>.subtitle {
+    color: #212121;
+    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.peculiarities-list>.descr {
+    color: #757575;
+    
+    font-size: 14px;
+    line-height: 1.71;    
+}
+.doing-title,
+.team-title {
+    color: #212121;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;   
+}
+.card-title {
+    color: #212121;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
 }
 
+.card-subtitle{
+    color: #757575;
+    
+    font-size: 16px;
+    line-height: 1.19px;    
+}
 .footer {
     background-color: #2F303A
 }
-.logo-footer {
-    color: #FFFFFF;
+.footer-contact {
+    font-style: normal;
 }
-.peculiarities>.title {
+.footer-addr {
+    color: #FFFFFF;
+
+    font-size: 14px;
+    line-height: 1.71;
+}
+.footer-email,
+.footer-phone {
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+}
+/* portfolio  */
+.portfolio-title {
     font-size: 0;
+}
+.filter-button {
+    color: #212121;
+    background-color: #F5F4FA;
+
+    width: 145px;
+    height: 38px;
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.62;
+    
+    cursor: pointer;
+}
+.filter-button.active,
+.filter-button:hover,
+.filter-button:focus {
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+.porfolio-project>.title {
+    color: #212121;
+    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+.porfolio-project>.subtitle {
+    color: #757575;
+
+    font-size: 16px;
+    line-height: 1.88;
 }
 
-/* Портфолио */
-.portfolio-header {
-    font-size: 0;
-}
-.portfolio-buttons>.button {
-    background-color: #F5F4FA;
-    color: #212121;
-   
-   
-    
-}
-.portfolio-buttons>.button:hover,
-.portfolio-buttons>.button:focus {
-    background-color: #2196F3;
-    color:#FFFFFF
-}
